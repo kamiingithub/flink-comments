@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionWriteReadTest
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 132.088 s - in org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionWriteReadTest

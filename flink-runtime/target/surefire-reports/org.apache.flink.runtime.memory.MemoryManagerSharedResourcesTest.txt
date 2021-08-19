@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.memory.MemoryManagerSharedResourcesTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.971 s - in org.apache.flink.runtime.memory.MemoryManagerSharedResourcesTest

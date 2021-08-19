@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.functions.PrintSinkFunctionTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.064 s - in org.apache.flink.streaming.api.functions.PrintSinkFunctionTest

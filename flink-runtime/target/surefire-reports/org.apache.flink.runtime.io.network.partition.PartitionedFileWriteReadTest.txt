@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.io.network.partition.PartitionedFileWriteReadTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.086 s - in org.apache.flink.runtime.io.network.partition.PartitionedFileWriteReadTest

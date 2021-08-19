@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/costs/Costs.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/costs/CostEstimator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/costs/DefaultCostEstimator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/FilterDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CrossStreamOuterFirstDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/ReduceProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/NoOpDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashLeftOuterJoinBuildFirstDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/OperatorDescriptorDual.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashRightOuterJoinBuildFirstDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/GroupReduceProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/SortMergeLeftOuterJoinDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashFullOuterJoinBuildFirstDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AbstractSortMergeJoinDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AbstractJoinDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CoGroupRawDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CoGroupDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashRightOuterJoinBuildSecondDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/GroupCombineProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AllReduceProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/SortMergeInnerJoinDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashJoinBuildFirstProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AllGroupReduceProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/BinaryUnionOpDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CoGroupWithSolutionSetFirstDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/OperatorDescriptorSingle.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CrossStreamOuterSecondDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashFullOuterJoinBuildSecondDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/MapDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AllGroupWithPartialPreGroupProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/SortMergeRightOuterJoinDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashLeftOuterJoinBuildSecondDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/FlatMapDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/HashJoinBuildSecondProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/MapPartitionDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/UtilSinkJoinOpDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AllGroupCombineProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CrossBlockOuterFirstDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/SolutionSetDeltaOperator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CartesianProductDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CoGroupWithSolutionSetSecondDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/GroupReduceWithCombineProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/SortMergeFullOuterJoinDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/PartialGroupProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/AbstractOperatorDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/operators/CrossBlockOuterSecondDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/util/Utils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/util/NoOpBinaryUdfOp.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/util/NoOpUnaryUdfOp.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/Optimizer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/RangePartitionRewriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/BinaryUnionReplacer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/PlanFinalizer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/StepFunctionValidator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/IdAndEstimatesVisitor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/BranchesVisitor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/InterestingPropertyVisitor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/StaticDynamicPathIdentifier.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/package-info.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/GraphCreatingVisitor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/traversals/UnionParallelismAndForwardEnforcer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/BulkPartialSolutionPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/SingleInputPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/BinaryUnionPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/DualInputPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/WorksetPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/SinkPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/NAryUnionPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/NamedChannel.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/PlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/IterationPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/Channel.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/SolutionSetPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/BulkIterationPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/WorksetIterationPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/SourcePlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/SinkJoinerPlanNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plan/OptimizedPlan.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/IterationNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/SolutionSetNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/BulkIterationNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/DagConnection.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/AbstractPartialSolutionNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/CoGroupRawNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/SinkJoiner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/WorksetIterationNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/TempMode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/MapNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/PartitionNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/WorksetNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/PlanCacheCleaner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/JoinNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/EstimateProvider.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/DataSinkNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/GroupCombineNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/OuterJoinNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/OptimizerNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/CrossNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/InterestingPropertiesClearer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/BulkPartialSolutionNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/SortPartitionNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/GroupReduceNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/TwoInputNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/FlatMapNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/NoOpNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/BinaryUnionNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/FilterNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/ReduceNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/MapPartitionNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/UnaryOperatorNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/DataSourceNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/SingleInputNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dag/CoGroupNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/postpass/MissingFieldTypeInfoException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/postpass/OptimizerPostPass.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/postpass/ConflictingFieldTypeInfoException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/postpass/JavaApiPostPass.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plantranslate/JobGraphGenerator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plantranslate/JsonMapper.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/CompilerPostPassException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dataproperties/GlobalProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dataproperties/RequestedLocalProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dataproperties/LocalProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dataproperties/PartitioningProperty.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dataproperties/RequestedGlobalProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/dataproperties/InterestingProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plandump/ExecutionPlanJSONGenerator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plandump/PlanJSONDumpGenerator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plandump/DumpableConnection.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/plandump/DumpableNode.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/DataStatistics.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/main/java/org/apache/flink/optimizer/CompilerException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/NestedIterationsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/costs/DefaultCostEstimatorTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/ParallelismChangeTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/PartitioningReusageTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/TestDistribution.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/CoGroupOnConflictingPartitioningsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/CoGroupWithDistributionTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/JoinWithDistributionTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/JoinOnConflictingPartitioningsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/CoGroupGlobalPropertiesCompatibilityTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/operators/JoinGlobalPropertiesCompatibilityTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/util/OperatorResolver.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/util/CompilerTestBase.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/GroupOrderTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/AdditionalOperatorsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/plan/ChannelTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dag/MapPartitionNodeTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dag/CoGroupNodeTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dag/GroupCombineNodeTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dag/GroupReduceNodeTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/BranchingPlansCompilerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/plantranslate/TempInIterationsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/plantranslate/JobGraphGeneratorTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/SelectOneReducer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/Top1GroupReducer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityFlatMapper.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityGroupReducer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityCrosser.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityJoiner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityPartitionerMapper.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityMapper.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/DummyCoGroupFunction.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityGroupReducerCombinable.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityKeyExtractor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/DummyFlatJoinFunction.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/testfunctions/IdentityCoGrouper.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/UnionReplacementTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/DisjointDataFlowsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/PartitionOperatorTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/DistinctAndGroupingOptimizerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/DeltaIterationDependenciesTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/IterationCompilerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/WorksetIterationsJavaApiCompilerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/ReduceCompilationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/OpenIterationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/GroupReduceCompilationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/java/JoinTranslationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/CoGroupCustomPartitioningTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/BinaryCustomPartitioningCompatibilityTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/GroupingKeySelectorTranslationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/JoinCustomPartitioningTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/CustomPartitioningGlobalOptimizationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/GroupingTupleTranslationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/CustomPartitioningTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/custompartition/GroupingPojoTranslationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/ReduceAllTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/IterationsCompilerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/WorksetIterationCornerCasesTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/SortPartialReuseTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/UnionPropertyPropagationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/programs/ConnectedComponentsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/GlobalPropertiesPushdownTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/LocalPropertiesFilteringTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/MockDistribution.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/RequestedLocalPropertiesFilteringTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/MockPartitioner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/RequestedGlobalPropertiesFilteringTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/GlobalPropertiesMatchingTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataproperties/GlobalPropertiesFilteringTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/PropertyDataSourceTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/plandump/ExecutionPlanUtilTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/plandump/NumberFormattingTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/PipelineBreakerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/DistinctCompilationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/UnionBetweenDynamicAndStaticPathTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/SemanticPropertiesAPIToPlanTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/BroadcastVariablePipelinebreakerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/WorksetIterationsRecordApiCompilerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/PartitionPushdownTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/ReplicatingDataSourceTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/CachedMatchStrategyCompilerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/FeedbackPropertiesMatchTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/HardPlansCompilationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/CoGroupSolutionSetFirstTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataexchange/DataExchangeModeClosedBranchingTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataexchange/DataExchangeModeForwardTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataexchange/UnionClosedBranchingTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataexchange/PipelineBreakingTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/java/org/apache/flink/optimizer/dataexchange/DataExchangeModeOpenBranchingTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-optimizer/src/test/resources/log4j2-test.properties">
+</file>
+</checkstyle>

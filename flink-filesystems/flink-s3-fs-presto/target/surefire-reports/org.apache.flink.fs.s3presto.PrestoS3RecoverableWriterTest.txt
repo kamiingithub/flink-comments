@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.fs.s3presto.PrestoS3RecoverableWriterTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.602 s - in org.apache.flink.fs.s3presto.PrestoS3RecoverableWriterTest

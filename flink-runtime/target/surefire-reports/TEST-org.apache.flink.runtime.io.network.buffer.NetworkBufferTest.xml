@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="26.303" tests="404" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="git.tags" value=""/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="forkNumber" value="08"/>
+    <property name="git.build.version" value="1.12.0"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/test-classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/flink-core-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-annotations/target/flink-annotations-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-metrics/flink-metrics-core/target/flink-metrics-core-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-asm-7/7.1-12.0/flink-shaded-asm-7-7.1-12.0.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar:/Users/linyilong/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-java/target/flink-java-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-queryable-state/flink-queryable-state-client-java/target/flink-queryable-state-client-java-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-hadoop-fs/target/flink-hadoop-fs-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-common/2.4.1/hadoop-common-2.4.1.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-annotations/2.4.1/hadoop-annotations-2.4.1.jar:/Users/linyilong/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/linyilong/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/linyilong/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/linyilong/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/linyilong/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/linyilong/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/linyilong/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/linyilong/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/linyilong/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/linyilong/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/linyilong/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/linyilong/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.jar:/Users/linyilong/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/linyilong/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/linyilong/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/linyilong/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/linyilong/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/linyilong/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/linyilong/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/linyilong/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/linyilong/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/linyilong/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/linyilong/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/linyilong/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/linyilong/.m2/repository/commons-configuration/commons-configuration/1.7/commons-configuration-1.7.jar:/Users/linyilong/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/linyilong/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/Users/linyilong/.m2/repository/org/apache/avro/avro/1.10.0/avro-1.10.0.jar:/Users/linyilong/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/Users/linyilong/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/linyilong/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/linyilong/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-auth/2.4.1/hadoop-auth-2.4.1.jar:/Users/linyilong/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/linyilong/.m2/repository/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14.jar:/Users/linyilong/.m2/repository/com/github/spotbugs/spotbugs-annotations/3.1.9/spotbugs-annotations-3.1.9.jar:/Users/linyilong/.m2/repository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.4.1/hadoop-hdfs-2.4.1.jar:/Users/linyilong/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.4.1/hadoop-mapreduce-client-core-2.4.1.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.4.1/hadoop-yarn-common-2.4.1.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.4.1/hadoop-yarn-api-2.4.1.jar:/Users/linyilong/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/linyilong/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/linyilong/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar:/Users/linyilong/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/linyilong/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/linyilong/.m2/repository/com/sun/jersey/contribs/jersey-guice/1.9/jersey-guice-1.9.jar:/Users/linyilong/.m2/repository/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.jar:/Users/linyilong/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-netty/4.1.49.Final-12.0/flink-shaded-netty-4.1.49.Final-12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-guava/18.0-12.0/flink-shaded-guava-18.0-12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-jackson/2.10.1-12.0/flink-shaded-jackson-2.10.1-12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-zookeeper-3/3.4.14-12.0/flink-shaded-zookeeper-3-3.4.14-12.0.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/linyilong/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/Users/linyilong/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/linyilong/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-actor_2.11/2.5.21/akka-actor_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/com/typesafe/config/1.3.0/config-1.3.0.jar:/Users/linyilong/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-remote_2.11/2.5.21/akka-remote_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/linyilong/.m2/repository/com/typesafe/ssl-config-core_2.11/0.3.7/ssl-config-core_2.11-0.3.7.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-protobuf_2.11/2.5.21/akka-protobuf_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-slf4j_2.11/2.5.21/akka-slf4j_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/org/clapper/grizzled-slf4j_2.11/1.3.2/grizzled-slf4j_2.11-1.3.2.jar:/Users/linyilong/.m2/repository/com/github/scopt/scopt_2.11/3.5.0/scopt_2.11-3.5.0.jar:/Users/linyilong/.m2/repository/org/xerial/snappy/snappy-java/1.1.4/snappy-java-1.1.4.jar:/Users/linyilong/.m2/repository/com/twitter/chill_2.11/0.7.6/chill_2.11-0.7.6.jar:/Users/linyilong/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar:/Users/linyilong/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-test-utils-parent/flink-test-utils-junit/target/flink-test-utils-junit-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-metrics/flink-metrics-core/target/flink-metrics-core-1.12.0-tests.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/flink-core-1.12.0-tests.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-netty-tcnative-dynamic/2.0.30.Final-12.0/flink-shaded-netty-tcnative-dynamic-2.0.30.Final-12.0.jar:/Users/linyilong/.m2/repository/org/apache/curator/curator-test/2.12.0/curator-test-2.12.0.jar:/Users/linyilong/.m2/repository/org/scalatest/scalatest_2.11/3.0.0/scalatest_2.11-3.0.0.jar:/Users/linyilong/.m2/repository/org/scalactic/scalactic_2.11/3.0.0/scalactic_2.11-3.0.0.jar:/Users/linyilong/.m2/repository/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar:/Users/linyilong/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/Users/linyilong/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.1/scala-parser-combinators_2.11-1.1.1.jar:/Users/linyilong/.m2/repository/com/squareup/okhttp3/okhttp/3.7.0/okhttp-3.7.0.jar:/Users/linyilong/.m2/repository/com/squareup/okio/okio/1.12.0/okio-1.12.0.jar:/Users/linyilong/.m2/repository/com/github/oshi/oshi-core/3.4.0/oshi-core-3.4.0.jar:/Users/linyilong/.m2/repository/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.jar:/Users/linyilong/.m2/repository/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/tools/force-shading/target/force-shading-1.12.0.jar:/Users/linyilong/.m2/repository/org/slf4j/slf4j-api/1.7.15/slf4j-api-1.7.15.jar:/Users/linyilong/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/linyilong/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/linyilong/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.15/byte-buddy-agent-1.8.15.jar:/Users/linyilong/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4/2.0.4/powermock-module-junit4-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.4/powermock-module-junit4-common-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-core/2.0.4/powermock-core-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-mockito2/2.0.4/powermock-api-mockito2-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-support/2.0.4/powermock-api-support-2.0.4.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:"/>
+    <property name="git.build.host" value="localhost"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="hadoop.version" value="2.4.1"/>
+    <property name="git.commit.id" value="8ae020749cf61fe336cc801f0c2d683ec8dffb02"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="project.basedir" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime"/>
+    <property name="sun.java.command" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/surefire/surefirebooter588092038367226535.jar /Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/surefire 2021-08-22T09-57-04_356-jvmRun8 surefire1069330020668956823tmp surefire_4143875679701765866572tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/test-classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/flink-core-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-annotations/target/flink-annotations-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-metrics/flink-metrics-core/target/flink-metrics-core-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-asm-7/7.1-12.0/flink-shaded-asm-7-7.1-12.0.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar:/Users/linyilong/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-java/target/flink-java-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-math3/3.5/commons-math3-3.5.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-queryable-state/flink-queryable-state-client-java/target/flink-queryable-state-client-java-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-hadoop-fs/target/flink-hadoop-fs-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-common/2.4.1/hadoop-common-2.4.1.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-annotations/2.4.1/hadoop-annotations-2.4.1.jar:/Users/linyilong/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/linyilong/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/linyilong/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/linyilong/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/linyilong/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/linyilong/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/linyilong/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/linyilong/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/linyilong/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/linyilong/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/linyilong/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/linyilong/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.8.3/jackson-jaxrs-1.8.3.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-xc/1.8.3/jackson-xc-1.8.3.jar:/Users/linyilong/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/linyilong/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/linyilong/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/linyilong/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/linyilong/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/linyilong/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/linyilong/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/linyilong/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/linyilong/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/linyilong/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/linyilong/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/linyilong/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/linyilong/.m2/repository/commons-configuration/commons-configuration/1.7/commons-configuration-1.7.jar:/Users/linyilong/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/linyilong/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/Users/linyilong/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/Users/linyilong/.m2/repository/org/apache/avro/avro/1.10.0/avro-1.10.0.jar:/Users/linyilong/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar:/Users/linyilong/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar:/Users/linyilong/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar:/Users/linyilong/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-auth/2.4.1/hadoop-auth-2.4.1.jar:/Users/linyilong/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/linyilong/.m2/repository/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14.jar:/Users/linyilong/.m2/repository/com/github/spotbugs/spotbugs-annotations/3.1.9/spotbugs-annotations-3.1.9.jar:/Users/linyilong/.m2/repository/org/apache/yetus/audience-annotations/0.5.0/audience-annotations-0.5.0.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.4.1/hadoop-hdfs-2.4.1.jar:/Users/linyilong/.m2/repository/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.4.1/hadoop-mapreduce-client-core-2.4.1.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.4.1/hadoop-yarn-common-2.4.1.jar:/Users/linyilong/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.4.1/hadoop-yarn-api-2.4.1.jar:/Users/linyilong/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/linyilong/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/linyilong/.m2/repository/com/google/inject/guice/3.0/guice-3.0.jar:/Users/linyilong/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/linyilong/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/linyilong/.m2/repository/com/sun/jersey/contribs/jersey-guice/1.9/jersey-guice-1.9.jar:/Users/linyilong/.m2/repository/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.jar:/Users/linyilong/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-netty/4.1.49.Final-12.0/flink-shaded-netty-4.1.49.Final-12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-guava/18.0-12.0/flink-shaded-guava-18.0-12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-jackson/2.10.1-12.0/flink-shaded-jackson-2.10.1-12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-zookeeper-3/3.4.14-12.0/flink-shaded-zookeeper-3-3.4.14-12.0.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/linyilong/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/Users/linyilong/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/linyilong/.m2/repository/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-actor_2.11/2.5.21/akka-actor_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/com/typesafe/config/1.3.0/config-1.3.0.jar:/Users/linyilong/.m2/repository/org/scala-lang/modules/scala-java8-compat_2.11/0.7.0/scala-java8-compat_2.11-0.7.0.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-remote_2.11/2.5.21/akka-remote_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/io/netty/netty/3.10.6.Final/netty-3.10.6.Final.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-stream_2.11/2.5.21/akka-stream_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/linyilong/.m2/repository/com/typesafe/ssl-config-core_2.11/0.3.7/ssl-config-core_2.11-0.3.7.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-protobuf_2.11/2.5.21/akka-protobuf_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/com/typesafe/akka/akka-slf4j_2.11/2.5.21/akka-slf4j_2.11-2.5.21.jar:/Users/linyilong/.m2/repository/org/clapper/grizzled-slf4j_2.11/1.3.2/grizzled-slf4j_2.11-1.3.2.jar:/Users/linyilong/.m2/repository/com/github/scopt/scopt_2.11/3.5.0/scopt_2.11-3.5.0.jar:/Users/linyilong/.m2/repository/org/xerial/snappy/snappy-java/1.1.4/snappy-java-1.1.4.jar:/Users/linyilong/.m2/repository/com/twitter/chill_2.11/0.7.6/chill_2.11-0.7.6.jar:/Users/linyilong/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar:/Users/linyilong/.m2/repository/org/lz4/lz4-java/1.6.0/lz4-java-1.6.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-test-utils-parent/flink-test-utils-junit/target/flink-test-utils-junit-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-metrics/flink-metrics-core/target/flink-metrics-core-1.12.0-tests.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/flink-core-1.12.0-tests.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-netty-tcnative-dynamic/2.0.30.Final-12.0/flink-shaded-netty-tcnative-dynamic-2.0.30.Final-12.0.jar:/Users/linyilong/.m2/repository/org/apache/curator/curator-test/2.12.0/curator-test-2.12.0.jar:/Users/linyilong/.m2/repository/org/scalatest/scalatest_2.11/3.0.0/scalatest_2.11-3.0.0.jar:/Users/linyilong/.m2/repository/org/scalactic/scalactic_2.11/3.0.0/scalactic_2.11-3.0.0.jar:/Users/linyilong/.m2/repository/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar:/Users/linyilong/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/Users/linyilong/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.1.1/scala-parser-combinators_2.11-1.1.1.jar:/Users/linyilong/.m2/repository/com/squareup/okhttp3/okhttp/3.7.0/okhttp-3.7.0.jar:/Users/linyilong/.m2/repository/com/squareup/okio/okio/1.12.0/okio-1.12.0.jar:/Users/linyilong/.m2/repository/com/github/oshi/oshi-core/3.4.0/oshi-core-3.4.0.jar:/Users/linyilong/.m2/repository/net/java/dev/jna/jna-platform/4.2.2/jna-platform-4.2.2.jar:/Users/linyilong/.m2/repository/net/java/dev/jna/jna/4.2.2/jna-4.2.2.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/tools/force-shading/target/force-shading-1.12.0.jar:/Users/linyilong/.m2/repository/org/slf4j/slf4j-api/1.7.15/slf4j-api-1.7.15.jar:/Users/linyilong/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/linyilong/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/linyilong/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.15/byte-buddy-agent-1.8.15.jar:/Users/linyilong/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4/2.0.4/powermock-module-junit4-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.4/powermock-module-junit4-common-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-core/2.0.4/powermock-core-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-mockito2/2.0.4/powermock-api-mockito2-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-support/2.0.4/powermock-api-support-2.0.4.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/linyilong"/>
+    <property name="user.language" value="zh"/>
+    <property name="git.closest.tag.commit.count" value=""/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="git.total.commit.count" value="1"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="git.closest.tag.name" value=""/>
+    <property name="idea.version2020.1.1" value="true"/>
+    <property name="mvn.forkNumber" value="8"/>
+    <property name="git.local.branch.ahead" value="0"/>
+    <property name="git.build.time" value="2021-08-22T10:00:32+0800"/>
+    <property name="surefire.real.class.path" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime/target/surefire/surefirebooter588092038367226535.jar"/>
+    <property name="git.commit.message.full" value="&apos;init&apos;"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="linyilong"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="git.local.branch.behind" value="0"/>
+    <property name="git.dirty" value="true"/>
+    <property name="localRepository" value="/Users/linyilong/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/13/zrj4_mhs20s73h2kpdjtw4sr0000gn/T/"/>
+    <property name="execution.checkpointing.unaligned" value="true"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="user.dir" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-runtime"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="git.commit.id.abbrev" value="8ae0207"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="git.commit.message.short" value="&apos;init&apos;"/>
+    <property name="java.library.path" value="/Users/linyilong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.ext.dirs" value="/Users/linyilong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="git.commit.time" value="2021-08-19T09:19:58+0800"/>
+  </properties>
+  <testcase name="testDataBufferGetNioBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.248"/>
+  <testcase name="testEventBufferGetNioBufferReadable" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.097"/>
+  <testcase name="testDataBufferReadableBytes" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.058"/>
+  <testcase name="testDataBufferGetNioBufferReadable" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.071"/>
+  <testcase name="testEventBufferGetRecycler" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.117"/>
+  <testcase name="testDataBufferTagAsEvent" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.064"/>
+  <testcase name="testDataBufferRetainBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.089"/>
+  <testcase name="testEventBufferSetGetSize" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.062"/>
+  <testcase name="testEventBufferIsBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.079"/>
+  <testcase name="testDataBufferGetSetReaderIndex" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.081"/>
+  <testcase name="testEventBufferTagAsEvent" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.079"/>
+  <testcase name="testEventBufferCreateSlice1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.081"/>
+  <testcase name="testEventBufferCreateSlice2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.062"/>
+  <testcase name="testEventBufferRecycleBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.067"/>
+  <testcase name="testEventBufferSetAllocator" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.071"/>
+  <testcase name="testEventBufferGetSetReaderIndex" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.094"/>
+  <testcase name="testGetNioBufferReadableThreadSafe" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.145"/>
+  <testcase name="testGetNioBufferThreadSafe" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.113"/>
+  <testcase name="testDataBufferIsBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.121"/>
+  <testcase name="testEventBufferGetMaxCapacity" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.148"/>
+  <testcase name="testDataBufferCreateSlice1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.131"/>
+  <testcase name="testDataBufferCreateSlice2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.112"/>
+  <testcase name="testEventBufferReadableBytes" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.119"/>
+  <testcase name="testDataBufferGetMemorySegment" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.13"/>
+  <testcase name="testDataBufferSetAllocator" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.097"/>
+  <testcase name="testEventBufferGetNioBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.099"/>
+  <testcase name="testDataBufferGetRecycler" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.064"/>
+  <testcase name="testDataBufferRecycleBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.08"/>
+  <testcase name="testEventBufferGetMemorySegment" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.094"/>
+  <testcase name="testEventBufferRetainBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.082"/>
+  <testcase name="testDataBufferSetGetSize" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.075"/>
+  <testcase name="testDataBufferGetMaxCapacity" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testRetainedDuplicateAfterReleaseRetainedSlice" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.115"/>
+  <testcase name="testSequentialUnsignedMediumAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.061"/>
+  <testcase name="testWriteIso88591CharSequenceExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.06"/>
+  <testcase name="testReadShortAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.059"/>
+  <testcase name="testEmptyNioBuffers" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testReadUnsignedMediumAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.038"/>
+  <testcase name="getIntBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="getIntBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.01"/>
+  <testcase name="testSetByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.088"/>
+  <testcase name="testToStringMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.052"/>
+  <testcase name="getLongBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="getLongBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testMixedSliceAIndexOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="testReadIntAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testSliceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.057"/>
+  <testcase name="testNioBufferAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.107"/>
+  <testcase name="testNioBuffersAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.037"/>
+  <testcase name="testRandomIntLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testWriteReadUsAsciiCharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testWriteUsAsciiCharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.046"/>
+  <testcase name="testWriteMediumLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testWriteDoubleLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testReadRetainedSliceOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.413"/>
+  <testcase name="testSequentialUnsignedMediumLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.082"/>
+  <testcase name="testSliceReadGatheringByteChannelMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.362"/>
+  <testcase name="setIndexBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="setIndexBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.054"/>
+  <testcase name="setIndexBoundaryCheck3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.082"/>
+  <testcase name="testRetainedDuplicateUnreleasable1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.082"/>
+  <testcase name="testRetainedDuplicateUnreleasable2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.053"/>
+  <testcase name="testRetainedDuplicateUnreleasable3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testRetainedDuplicateUnreleasable4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testSetBytesAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.077"/>
+  <testcase name="testSetBytesAfterRelease3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.019"/>
+  <testcase name="testSetBytesAfterRelease4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.208"/>
+  <testcase name="testSetBytesAfterRelease5" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.047"/>
+  <testcase name="testSetBytesAfterRelease6" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.067"/>
+  <testcase name="testSetBytesAfterRelease7" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.045"/>
+  <testcase name="testSetBytesAfterRelease8" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testSequentialIntLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.015"/>
+  <testcase name="getByteBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="getByteBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testGetReadOnlyDirectDst" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.089"/>
+  <testcase name="testWriteLongAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.237"/>
+  <testcase name="testMultipleLevelRetainedSlice1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.341"/>
+  <testcase name="testMultipleLevelRetainedSlice2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.269"/>
+  <testcase name="testMultipleLevelRetainedSlice3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.354"/>
+  <testcase name="testMultipleLevelRetainedSlice4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.264"/>
+  <testcase name="testForEachByteAfterRelease1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.113"/>
+  <testcase name="testRetainedDuplicateAndRetainedSliceContentIsExpected" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.193"/>
+  <testcase name="copyBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.016"/>
+  <testcase name="copyBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="copyBoundaryCheck3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="copyBoundaryCheck4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.015"/>
+  <testcase name="testReadCharAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.107"/>
+  <testcase name="ensureWritableWithOutForceDoesNotThrow" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testSetIso88591CharSequenceNoExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.034"/>
+  <testcase name="testRandomUnsignedIntLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.009"/>
+  <testcase name="testSetBooleanAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.061"/>
+  <testcase name="testCompareTo2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.09"/>
+  <testcase name="testRetainedSliceAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testReadUnsignedMediumLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.058"/>
+  <testcase name="testDuplicateReadGatheringByteChannelMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.127"/>
+  <testcase name="testWriteBytesAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="testReadBooleanAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.032"/>
+  <testcase name="testSliceEndianness" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.057"/>
+  <testcase name="testRandomByteAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.01"/>
+  <testcase name="testSetBytesAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.034"/>
+  <testcase name="testGetUnsignedShortLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testWriteShortAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.033"/>
+  <testcase name="testSliceRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.052"/>
+  <testcase name="testSetUtf16CharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testSequentialByteBufferTransfer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.035"/>
+  <testcase name="testForEachByteDesc" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.016"/>
+  <testcase name="testSetShortAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testReadUnsignedIntLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.051"/>
+  <testcase name="testWriteBooleanAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.047"/>
+  <testcase name="testSliceAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.087"/>
+  <testcase name="testNioBufferAfterRelease1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="getDirectByteBufferState" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.009"/>
+  <testcase name="testSequentialUnsignedIntLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testRetainedDuplicateContents" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testSetDoubleAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testReadUnsignedShortLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="readByteThrowsIndexOutOfBoundsException" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testWriteMediumAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.042"/>
+  <testcase name="testWriteByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testCopy" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.075"/>
+  <testcase name="testSetIso88591CharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.054"/>
+  <testcase name="testWriteReadIso88591CharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testSetShortLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testGetMediumAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.125"/>
+  <testcase name="testMediumConsistentWithByteBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="testSliceContents" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.056"/>
+  <testcase name="testRetainedSliceAfterReleaseRetainedSlice" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testReadShortLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testToString" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testMixedSliceBLengthOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.034"/>
+  <testcase name="testSkipBytes1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.017"/>
+  <testcase name="testGetLongAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testWriteLongLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testGetUnsignedIntLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.032"/>
+  <testcase name="testSliceCapacityChange" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.024"/>
+  <testcase name="testWriteUsAsciiCharSequenceExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.02"/>
+  <testcase name="getBooleanBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="getBooleanBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.016"/>
+  <testcase name="testSequentialIntAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="testShortConsistentWithByteBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testRandomDoubleLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testSetCharAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.086"/>
+  <testcase name="testGetLongLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.065"/>
+  <testcase name="testWriteShortLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.033"/>
+  <testcase name="testRetainedSliceUnreleasable1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.044"/>
+  <testcase name="testRetainedSliceUnreleasable2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.046"/>
+  <testcase name="testRetainedSliceUnreleasable3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testRetainedSliceUnreleasable4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testGetBytesAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="testDuplicateAfterReleaseRetainedDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.111"/>
+  <testcase name="testWriteUtf8CharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testNioBuffersAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.032"/>
+  <testcase name="testMultipleRetainedSliceReleaseOriginal1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.114"/>
+  <testcase name="testMultipleRetainedSliceReleaseOriginal2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.104"/>
+  <testcase name="testMultipleRetainedSliceReleaseOriginal3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.118"/>
+  <testcase name="testMultipleRetainedSliceReleaseOriginal4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.212"/>
+  <testcase name="testSliceAfterReleaseRetainedSliceRetainedDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testCompareTo" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testWriteZero" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testGetShortAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.042"/>
+  <testcase name="testRandomByteBufferTransfer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.01"/>
+  <testcase name="testSequentialCopiedBufferTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testGetIntAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testSliceLengthOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testForEachByte" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.015"/>
+  <testcase name="testWriteUtf16CharSequenceExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testLongConsistentWithByteBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testMixedSliceBIndexOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.074"/>
+  <testcase name="testSetMediumLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.042"/>
+  <testcase name="testSliceIndexOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testDiscardAllReadBytes" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.031"/>
+  <testcase name="testCopyAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testRetainedSliceAfterReleaseRetainedSliceDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.019"/>
+  <testcase name="getDirectByteBufferBoundaryCheck" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testSequentialMediumAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.017"/>
+  <testcase name="testSliceIndex" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.097"/>
+  <testcase name="testSetUsAsciiCharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.042"/>
+  <testcase name="testRandomShortAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.038"/>
+  <testcase name="testRetainedSliceContents" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.054"/>
+  <testcase name="testSliceReadOutputStreamMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.073"/>
+  <testcase name="testReadBytes" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.017"/>
+  <testcase name="testGetByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testRandomFloatLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.031"/>
+  <testcase name="testRetainedSliceAfterReleaseRetainedDuplicateSlice" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testRandomUnsignedMediumLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="testMemoryAddressAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.046"/>
+  <testcase name="testRetainedDuplicateCapacityChange" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="testDuplicateAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.074"/>
+  <testcase name="initialState" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="testSequentialByteArrayTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="testSequentialByteArrayTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.049"/>
+  <testcase name="testSequentialShortAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testReaderIndexLargerThanWriterIndex" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.033"/>
+  <testcase name="testCopyAfterRelease1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.046"/>
+  <testcase name="testRandomDirectBufferTransfer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.048"/>
+  <testcase name="testDiscardSomeReadBytesAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.059"/>
+  <testcase name="testRetainedSliceIndexOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.047"/>
+  <testcase name="testSliceAfterReleaseRetainedSliceDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testReadFloatAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.035"/>
+  <testcase name="testRetainedDuplicateReleaseOriginal1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testRetainedDuplicateReleaseOriginal2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.057"/>
+  <testcase name="testRetainedDuplicateReleaseOriginal3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.097"/>
+  <testcase name="testRetainedDuplicateReleaseOriginal4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.037"/>
+  <testcase name="testForEachByteDescAfterRelease1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testRandomIntAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testRandomMediumAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testRandomUnsignedShortAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.052"/>
+  <testcase name="testDuplicateContents" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.035"/>
+  <testcase name="testSliceAfterReleaseRetainedDuplicateSlice" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.035"/>
+  <testcase name="testWriteUtf16CharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testWriteBytesAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.051"/>
+  <testcase name="testWriteBytesAfterRelease3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.047"/>
+  <testcase name="testWriteBytesAfterRelease4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testWriteBytesAfterRelease5" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testWriteBytesAfterRelease6" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.053"/>
+  <testcase name="testWriteBytesAfterRelease7" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.04"/>
+  <testcase name="testWriteBytesAfterRelease8" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.042"/>
+  <testcase name="testGetUnsignedIntAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.095"/>
+  <testcase name="testRetainedDuplicateAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.078"/>
+  <testcase name="getByteArrayBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.009"/>
+  <testcase name="getByteArrayBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.065"/>
+  <testcase name="getByteArrayBoundaryCheck3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="getByteArrayBoundaryCheck4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.016"/>
+  <testcase name="testWriteCharAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.053"/>
+  <testcase name="testSequentialUnsignedByteAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="testMixedSliceALengthOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.083"/>
+  <testcase name="testGetBytesAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testGetBytesAfterRelease3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testGetBytesAfterRelease4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.113"/>
+  <testcase name="testGetBytesAfterRelease5" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.032"/>
+  <testcase name="testGetBytesAfterRelease6" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.062"/>
+  <testcase name="testGetBytesAfterRelease7" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.089"/>
+  <testcase name="testGetBytesAfterRelease8" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.104"/>
+  <testcase name="testIntConsistentWithByteBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="testDuplicateReadOutputStreamMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.104"/>
+  <testcase name="testSequentialSlice1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.01"/>
+  <testcase name="testMultipleRetainedDuplicateReleaseOriginal1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.056"/>
+  <testcase name="testMultipleRetainedDuplicateReleaseOriginal2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.057"/>
+  <testcase name="testMultipleRetainedDuplicateReleaseOriginal3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.057"/>
+  <testcase name="testMultipleRetainedDuplicateReleaseOriginal4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.108"/>
+  <testcase name="testSequentialUnsignedShortAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="testRandomHeapBufferTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testRandomHeapBufferTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="testByteArrayTransfer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.052"/>
+  <testcase name="testReadMediumAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testRetainedSliceIndex" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="testRetainedSliceCapacityChange" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="testSetIntAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.04"/>
+  <testcase name="testLittleEndianWithExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.063"/>
+  <testcase name="testStreamTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.02"/>
+  <testcase name="testStreamTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="testRandomByteArrayTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.046"/>
+  <testcase name="testRandomByteArrayTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.055"/>
+  <testcase name="testSliceBytesInArrayMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.059"/>
+  <testcase name="testCapacityIncrease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.009"/>
+  <testcase name="testForEachByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.055"/>
+  <testcase name="testGetFloatLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.044"/>
+  <testcase name="testReadMediumLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.034"/>
+  <testcase name="testReadDoubleLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.04"/>
+  <testcase name="testSliceAfterReleaseRetainedSlice" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testReadBytesAfterRelease10" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testReadIntLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.052"/>
+  <testcase name="testWriteDoubleAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testNioBuffer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testReadLongLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testWriteFloatAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.035"/>
+  <testcase name="testSequentialHeapBufferTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.044"/>
+  <testcase name="testSequentialHeapBufferTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testRetainedSliceAfterReleaseRetainedDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.046"/>
+  <testcase name="testRandomShortLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="testGetBytesByteBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.037"/>
+  <testcase name="testNioBufferExposeOnlyRegion" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.082"/>
+  <testcase name="testReadUnsignedShortAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testGetDoubleAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.059"/>
+  <testcase name="testSetFloatAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.024"/>
+  <testcase name="testReadBytesAndWriteBytesWithFileChannel" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.075"/>
+  <testcase name="testGetReadOnlyHeapDst" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.02"/>
+  <testcase name="testForEachByte2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testSequentialLongLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="getMediumBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="getMediumBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testEnsureWritableAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.058"/>
+  <testcase name="testWriteUtf8CharSequenceExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.019"/>
+  <testcase name="testRandomUnsignedByteAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testSequentialUnsignedShortLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.01"/>
+  <testcase name="testDuplicateBytesInArrayMultipleThreads" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.093"/>
+  <testcase name="testGetCharAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.019"/>
+  <testcase name="testRefCnt2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.183"/>
+  <testcase name="testGetUnsignedByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.054"/>
+  <testcase name="testSequentialLongAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="testForEachByteAbort" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="testForEachByteDesc2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testArrayAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.038"/>
+  <testcase name="testWriteIntAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.069"/>
+  <testcase name="testForEachByteDescAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.074"/>
+  <testcase name="testCapacityDecrease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testWriteReadUtf16CharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.044"/>
+  <testcase name="testDuplicateAfterReleaseRetainedSliceDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.04"/>
+  <testcase name="testSetUtf8CharSequenceNoExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.038"/>
+  <testcase name="testReadRetainedSliceUnreleasable1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.037"/>
+  <testcase name="testReadRetainedSliceUnreleasable2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testReadRetainedSliceUnreleasable3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="testReadRetainedSliceUnreleasable4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testHashCode" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="testRandomMediumLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testGetUnsignedShortAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.054"/>
+  <testcase name="getShortBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="getShortBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.01"/>
+  <testcase name="testSetZeroAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.063"/>
+  <testcase name="comparableInterfaceNotViolated" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testDuplicateAfterReleaseRetainedDuplicateSlice" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testSetUsAsciiCharSequenceNoExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.032"/>
+  <testcase name="testRetainedSliceAndRetainedDuplicateContentIsExpected" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.109"/>
+  <testcase name="testCapacityEnforceMaxCapacity" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.067"/>
+  <testcase name="testRandomLongLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testRetainedDuplicateAfterReleaseRetainedDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.031"/>
+  <testcase name="testReadLongAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.056"/>
+  <testcase name="testRandomFloatAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.017"/>
+  <testcase name="testWriteIntLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="testWriteIso88591CharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testSetIso88591CharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testGetBytesAndSetBytesWithFileChannel" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.043"/>
+  <testcase name="testReadSliceOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testGetFloatAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.034"/>
+  <testcase name="testSetIntLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testRandomUnsignedIntAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.037"/>
+  <testcase name="testGetUnsignedMediumAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.07"/>
+  <testcase name="testDiscardReadBytes" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.031"/>
+  <testcase name="testCapacityNegative" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="testSetUtf8CharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.051"/>
+  <testcase name="testRetainedSliceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="readerIndexBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="readerIndexBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.037"/>
+  <testcase name="readerIndexBoundaryCheck3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="readerIndexBoundaryCheck4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.009"/>
+  <testcase name="testReadUnsignedByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testSetUtf8CharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testReadBytesAfterRelease2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testReadBytesAfterRelease3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.089"/>
+  <testcase name="testReadBytesAfterRelease4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testReadBytesAfterRelease5" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.063"/>
+  <testcase name="testReadBytesAfterRelease6" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.042"/>
+  <testcase name="testReadBytesAfterRelease7" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.033"/>
+  <testcase name="testReadBytesAfterRelease8" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testReadBytesAfterRelease9" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="getByteBufferBoundaryCheck" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="getByteBufferState" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.034"/>
+  <testcase name="testSequentialMediumLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.022"/>
+  <testcase name="testEquals" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.013"/>
+  <testcase name="testToByteBuffer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testToByteBuffer3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testSetUtf16CharSequenceAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.038"/>
+  <testcase name="testGetBooleanAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.029"/>
+  <testcase name="testSetMediumAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.09"/>
+  <testcase name="testRetainedSliceAfterReleaseRetainedSliceRetainedDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testWriteReadUtf8CharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testRetainedSliceLengthOutOfBounds" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.049"/>
+  <testcase name="testInternalNioBufferAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.045"/>
+  <testcase name="testIndexOf" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.015"/>
+  <testcase name="testReadByteAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testDiscardReadBytesAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.039"/>
+  <testcase name="testSequentialShortLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testRandomDoubleAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="testSetZero" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.025"/>
+  <testcase name="ensureWritableWithForceDoesNotThrow" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.038"/>
+  <testcase name="testGetMediumLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.058"/>
+  <testcase name="testGetDoubleLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testRetainedSliceReleaseOriginal1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.051"/>
+  <testcase name="testRetainedSliceReleaseOriginal2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.07"/>
+  <testcase name="testRetainedSliceReleaseOriginal3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.064"/>
+  <testcase name="testRetainedSliceReleaseOriginal4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.091"/>
+  <testcase name="writerIndexBoundaryCheck1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.016"/>
+  <testcase name="writerIndexBoundaryCheck2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.024"/>
+  <testcase name="writerIndexBoundaryCheck3" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="writerIndexBoundaryCheck4" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.011"/>
+  <testcase name="testSetLongLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.055"/>
+  <testcase name="testDuplicateCapacityChange" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.026"/>
+  <testcase name="testSequentialUnsignedIntAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.03"/>
+  <testcase name="testRandomLongAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.019"/>
+  <testcase name="testRefCnt" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.302"/>
+  <testcase name="testSetUsAsciiCharSequence" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.036"/>
+  <testcase name="testReadFloatLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.074"/>
+  <testcase name="testSliceAfterReleaseRetainedDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.054"/>
+  <testcase name="testReadUnsignedIntAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.07"/>
+  <testcase name="testSetLongAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.027"/>
+  <testcase name="testGetIntLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.018"/>
+  <testcase name="testWriteZeroAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.023"/>
+  <testcase name="testDiscardReadBytes2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.141"/>
+  <testcase name="testReadDoubleAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.063"/>
+  <testcase name="testSequentialByteBufferBackedHeapBufferTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.021"/>
+  <testcase name="testSequentialByteBufferBackedHeapBufferTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.032"/>
+  <testcase name="testDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.014"/>
+  <testcase name="testSequentialByteAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.012"/>
+  <testcase name="testGetShortLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.05"/>
+  <testcase name="testWriteFloatLEAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.041"/>
+  <testcase name="testRandomUnsignedMediumAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.016"/>
+  <testcase name="testSequentialDirectBufferTransfer1" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.028"/>
+  <testcase name="testSequentialDirectBufferTransfer2" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.015"/>
+  <testcase name="testSetUtf16CharSequenceNoExpand" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.071"/>
+  <testcase name="testDuplicateRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.04"/>
+  <testcase name="testRandomUnsignedShortLEAccess" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.033"/>
+  <testcase name="testInternalNioBuffer" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="2.145"/>
+  <testcase name="testRetainedDuplicateAfterReleaseDuplicate" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.024"/>
+  <testcase name="testReadBytesAfterRelease" classname="org.apache.flink.runtime.io.network.buffer.NetworkBufferTest" time="0.078"/>
+</testsuite>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.api.java.utils.MultipleParameterToolTest
+-------------------------------------------------------------------------------
+Tests run: 38, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.42 s - in org.apache.flink.api.java.utils.MultipleParameterToolTest

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.operators.collect.CollectResultIteratorTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.717 s - in org.apache.flink.streaming.api.operators.collect.CollectResultIteratorTest

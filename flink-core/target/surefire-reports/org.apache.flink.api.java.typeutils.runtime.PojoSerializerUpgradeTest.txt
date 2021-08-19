@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.api.java.typeutils.runtime.PojoSerializerUpgradeTest
+-------------------------------------------------------------------------------
+Tests run: 240, Failures: 0, Errors: 0, Skipped: 136, Time elapsed: 3.12 s - in org.apache.flink.api.java.typeutils.runtime.PojoSerializerUpgradeTest

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.api.scala.extensions.impl.acceptPartialFunctions.OnUnfinishedKeyPairOperationTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.265 s - in org.apache.flink.api.scala.extensions.impl.acceptPartialFunctions.OnUnfinishedKeyPairOperationTest

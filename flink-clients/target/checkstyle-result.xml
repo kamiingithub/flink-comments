@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/ClientUtils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/FlinkPipelineTranslator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/CustomCommandLine.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/ApplicationDeployer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/DefaultCLI.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/ClientOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/ExecutionConfigAccessor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/CliArgsException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/DynamicPropertiesUtil.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/GenericCLI.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/SavepointOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/CommandLineOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/ListOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/AbstractCustomCommandLine.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/CancelOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/ProgramOptionsUtils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/StopOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/CliFrontend.java">
+<error line="1057" column="82" severity="error" message="&apos;;&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/ProgramOptions.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/cli/CliFrontendParser.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/PlanTranslator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/StreamGraphTranslator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterRetrieveException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/StandaloneClusterId.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterClientFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/AbstractContainerizedClusterClientFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterDeploymentException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/PipelineExecutorUtils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/AbstractSessionClusterExecutor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/LocalExecutor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/RemoteExecutorFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/LocalExecutorFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/RemoteExecutor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/executors/AbstractJobClusterExecutor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterClientJobClientAdapter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/StandaloneClientFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/JobStatusPollingUtils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/UnsuccessfulExecutionException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationDispatcherBootstrap.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ClassPathPackagedProgramRetriever.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationExecutionException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationClusterEntryPoint.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/DetachedApplicationRunner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/EmbeddedJobClient.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/cli/ApplicationClusterDeployer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationConfiguration.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/WebSubmissionJobClient.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/executors/EmbeddedExecutor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/executors/WebSubmissionExecutorFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/executors/EmbeddedExecutorServiceLoader.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/executors/EmbeddedExecutorFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/executors/WebSubmissionExecutorServiceLoader.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/executors/EmbeddedJobClientCreator.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/JarManifestParser.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationDispatcherGatewayServiceFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationRunner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/application/ApplicationDispatcherLeaderProcessFactoryFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterSpecification.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/DefaultClusterClientServiceLoader.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/ClusterClientServiceLoader.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/deployment/StandaloneClusterDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ProgramMissingJobException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ClusterClient.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgram.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgramRetriever.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ProgramInvocationException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ContextEnvironment.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ClusterClientProvider.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/OptimizerPlanEnvironment.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/StreamContextEnvironment.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/PerJobMiniClusterFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgramUtils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/StreamPlanEnvironment.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/rest/RestClusterClient.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/rest/retry/WaitStrategy.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/rest/retry/ExponentialWaitStrategy.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/rest/RestClusterClientConfiguration.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/MiniClusterClient.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ProgramParametrizationException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/program/ProgramAbortException.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/main/java/org/apache/flink/client/FlinkPipelineTranslationUtil.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/ClientUtilsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/ExecutionEnvironmentTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/testjar/TestUserClassLoaderJobLib.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/testjar/TestJob.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/testjar/TestJobInfo.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/testjar/MultiExecuteJob.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/testjar/JobWithExternalDependency.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/testjar/TestUserClassLoaderJob.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendRunTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendListTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/GenericCLITest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/util/DummyCustomCommandLine.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/util/MockedCliFrontend.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/util/DummyClusterClientServiceLoader.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/util/DummyClusterDescriptor.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/util/DummyClusterClientFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendPackageProgramTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendTestUtils.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendCancelTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendITCase.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/DefaultCLITest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendSavepointTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/ClientOptionsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendInfoTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendDynamicPropertiesTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendStopWithSavepointTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendTestBase.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/deployment/application/JobStatusPollingUtilsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/deployment/application/ApplicationDispatcherBootstrapTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/deployment/application/JarManifestParserTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/deployment/application/ClassPathPackagedProgramRetrieverTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/deployment/ClusterClientServiceLoaderTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/PackagedProgramUtilsTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/ExecutionPlanCreationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/TestingClusterClient.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/ExecutionPlanAfterExecutionTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/ClientTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/PackagedProgramTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/OptimizerPlanEnvironmentTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/PackagedProgramUtilsPipelineTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/PerJobMiniClusterFactoryTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/rest/RestClusterClientConfigurationTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/rest/RestClusterClientTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/rest/retry/ExponentialWaitStrategyTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/java/org/apache/flink/client/program/rest/RestClusterClientSavepointTriggerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-clients/src/test/resources/log4j2-test.properties">
+</file>
+</checkstyle>

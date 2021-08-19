@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerUpgradeTest
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 12, Time elapsed: 0.723 s - in org.apache.flink.api.java.typeutils.runtime.kryo.KryoSerializerUpgradeTest

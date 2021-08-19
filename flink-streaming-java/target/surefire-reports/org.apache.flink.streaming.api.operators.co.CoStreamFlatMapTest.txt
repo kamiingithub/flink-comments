@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.operators.co.CoStreamFlatMapTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.277 s - in org.apache.flink.streaming.api.operators.co.CoStreamFlatMapTest

@@ -1,0 +1,38 @@
+Comparing source compatibility of /Users/linyilong/IdeaProjects/architect/flink-comments/flink-streaming-java/target/flink-streaming-java_2.11-1.12.0.jar against /Users/linyilong/.m2/repository/org/apache/flink/flink-streaming-java_2.11/1.11.0/flink-streaming-java_2.11-1.11.0.jar
+***  MODIFIED CLASS: PUBLIC org.apache.flink.streaming.api.datastream.DataStream  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW METHOD: PUBLIC(+) org.apache.flink.util.CloseableIterator executeAndCollect()
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) org.apache.flink.util.CloseableIterator executeAndCollect(java.lang.String)
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) java.util.List executeAndCollect(int)
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) java.util.List executeAndCollect(java.lang.String, int)
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) org.apache.flink.streaming.api.datastream.DataStreamSink sinkTo(org.apache.flink.api.connector.sink.Sink)
+	===  UNCHANGED METHOD: PUBLIC org.apache.flink.streaming.api.datastream.AllWindowedStream timeWindowAll(org.apache.flink.streaming.api.windowing.time.Time)
+		+++  NEW ANNOTATION: java.lang.Deprecated
+	===  UNCHANGED METHOD: PUBLIC org.apache.flink.streaming.api.datastream.AllWindowedStream timeWindowAll(org.apache.flink.streaming.api.windowing.time.Time, org.apache.flink.streaming.api.windowing.time.Time)
+		+++  NEW ANNOTATION: java.lang.Deprecated
+***  MODIFIED CLASS: PUBLIC org.apache.flink.streaming.api.datastream.DataStreamSource  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW CONSTRUCTOR: PUBLIC(+) DataStreamSource(org.apache.flink.streaming.api.environment.StreamExecutionEnvironment, org.apache.flink.api.common.typeinfo.TypeInformation, org.apache.flink.streaming.api.operators.StreamSource, boolean, java.lang.String, org.apache.flink.api.connector.source.Boundedness)
+===  UNCHANGED CLASS: PUBLIC org.apache.flink.streaming.api.datastream.KeyedStream  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	===  UNCHANGED METHOD: PUBLIC org.apache.flink.streaming.api.datastream.WindowedStream timeWindow(org.apache.flink.streaming.api.windowing.time.Time)
+		+++  NEW ANNOTATION: java.lang.Deprecated
+	===  UNCHANGED METHOD: PUBLIC org.apache.flink.streaming.api.datastream.WindowedStream timeWindow(org.apache.flink.streaming.api.windowing.time.Time, org.apache.flink.streaming.api.windowing.time.Time)
+		+++  NEW ANNOTATION: java.lang.Deprecated
+***  MODIFIED CLASS: PUBLIC org.apache.flink.streaming.api.environment.CheckpointConfig  (compatible)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW CONSTRUCTOR: PUBLIC(+) CheckpointConfig(org.apache.flink.streaming.api.environment.CheckpointConfig)
+	+++  NEW METHOD: PUBLIC(+) void disableCheckpointing()
+	+++  NEW METHOD: PUBLIC(+) void enableApproximateLocalRecovery(boolean)
+	+++  NEW METHOD: PUBLIC(+) boolean isApproximateLocalRecoveryEnabled()
+***  MODIFIED CLASS: PUBLIC org.apache.flink.streaming.api.environment.StreamExecutionEnvironment  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.streaming.api.environment.LocalStreamEnvironment createLocalEnvironment(org.apache.flink.configuration.Configuration)
+	+++  NEW METHOD: PUBLIC(+) org.apache.flink.streaming.api.datastream.DataStreamSource fromSequence(long, long)
+	===  UNCHANGED METHOD: PUBLIC org.apache.flink.streaming.api.datastream.DataStreamSource generateSequence(long, long)
+		+++  NEW ANNOTATION: java.lang.Deprecated
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.streaming.api.environment.StreamExecutionEnvironment getExecutionEnvironment(org.apache.flink.configuration.Configuration)

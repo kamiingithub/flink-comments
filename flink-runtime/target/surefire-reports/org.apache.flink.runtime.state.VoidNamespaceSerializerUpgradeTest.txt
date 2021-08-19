@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.state.VoidNamespaceSerializerUpgradeTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.108 s - in org.apache.flink.runtime.state.VoidNamespaceSerializerUpgradeTest

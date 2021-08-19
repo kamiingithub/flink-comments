@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.metrics.dump.MetricDumpSerializerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.705 s - in org.apache.flink.runtime.metrics.dump.MetricDumpSerializerTest

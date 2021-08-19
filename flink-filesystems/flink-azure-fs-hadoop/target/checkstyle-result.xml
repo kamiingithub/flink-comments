@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/main/java/org/apache/flink/fs/azurefs/AbstractAzureFSFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/main/java/org/apache/flink/fs/azurefs/AzureFSFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/main/java/org/apache/flink/fs/azurefs/SecureAzureFSFactory.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/main/java/org/apache/flink/fs/azurefs/EnvironmentVariableKeyProvider.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/test/java/org/apache/flink/fs/azurefs/AzureFSFactoryTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/test/java/org/apache/flink/fs/azurefs/AzureFileSystemBehaviorITCase.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-filesystems/flink-azure-fs-hadoop/src/test/resources/log4j2-test.properties">
+</file>
+</checkstyle>

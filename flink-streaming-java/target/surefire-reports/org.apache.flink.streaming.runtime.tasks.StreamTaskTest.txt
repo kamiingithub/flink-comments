@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.runtime.tasks.StreamTaskTest
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.803 s - in org.apache.flink.streaming.runtime.tasks.StreamTaskTest

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.state.MemoryStateBackendTest
+-------------------------------------------------------------------------------
+Tests run: 128, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 9.077 s - in org.apache.flink.runtime.state.MemoryStateBackendTest

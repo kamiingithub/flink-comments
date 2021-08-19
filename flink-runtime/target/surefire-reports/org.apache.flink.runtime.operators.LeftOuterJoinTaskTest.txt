@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.operators.LeftOuterJoinTaskTest
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.574 s - in org.apache.flink.runtime.operators.LeftOuterJoinTaskTest

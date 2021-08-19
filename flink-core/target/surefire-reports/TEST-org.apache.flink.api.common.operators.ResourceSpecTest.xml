@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.018" tests="17" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="forkNumber" value="07"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/test-classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-annotations/target/flink-annotations-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-metrics/flink-metrics-core/target/flink-metrics-core-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-asm-7/7.1-12.0/flink-shaded-asm-7-7.1-12.0.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar:/Users/linyilong/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/linyilong/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-guava/18.0-12.0/flink-shaded-guava-18.0-12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-test-utils-parent/flink-test-utils-junit/target/flink-test-utils-junit-1.12.0.jar:/Users/linyilong/.m2/repository/joda-time/joda-time/2.5/joda-time-2.5.jar:/Users/linyilong/.m2/repository/org/joda/joda-convert/1.7/joda-convert-1.7.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-jackson/2.10.1-12.0/flink-shaded-jackson-2.10.1-12.0.jar:/Users/linyilong/.m2/repository/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/tools/force-shading/target/force-shading-1.12.0.jar:/Users/linyilong/.m2/repository/org/slf4j/slf4j-api/1.7.15/slf4j-api-1.7.15.jar:/Users/linyilong/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/linyilong/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/linyilong/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.15/byte-buddy-agent-1.8.15.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4/2.0.4/powermock-module-junit4-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.4/powermock-module-junit4-common-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-core/2.0.4/powermock-core-2.0.4.jar:/Users/linyilong/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-mockito2/2.0.4/powermock-api-mockito2-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-support/2.0.4/powermock-api-support-2.0.4.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="hadoop.version" value="2.4.1"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="project.basedir" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core"/>
+    <property name="sun.java.command" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/surefire/surefirebooter146740433154087276.jar /Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/surefire 2021-08-22T09-57-04_356-jvmRun7 surefire8888152256478737557tmp surefire_11688488679822359178tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/test-classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/classes:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-annotations/target/flink-annotations-1.12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-metrics/flink-metrics-core/target/flink-metrics-core-1.12.0.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-asm-7/7.1-12.0/flink-shaded-asm-7-7.1-12.0.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar:/Users/linyilong/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar:/Users/linyilong/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/linyilong/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/linyilong/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-guava/18.0-12.0/flink-shaded-guava-18.0-12.0.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/flink-test-utils-parent/flink-test-utils-junit/target/flink-test-utils-junit-1.12.0.jar:/Users/linyilong/.m2/repository/joda-time/joda-time/2.5/joda-time-2.5.jar:/Users/linyilong/.m2/repository/org/joda/joda-convert/1.7/joda-convert-1.7.jar:/Users/linyilong/.m2/repository/org/apache/flink/flink-shaded-jackson/2.10.1-12.0/flink-shaded-jackson-2.10.1-12.0.jar:/Users/linyilong/.m2/repository/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar:/Users/linyilong/IdeaProjects/architect/flink-comments/tools/force-shading/target/force-shading-1.12.0.jar:/Users/linyilong/.m2/repository/org/slf4j/slf4j-api/1.7.15/slf4j-api-1.7.15.jar:/Users/linyilong/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/linyilong/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/linyilong/.m2/repository/org/mockito/mockito-core/2.21.0/mockito-core-2.21.0.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/linyilong/.m2/repository/net/bytebuddy/byte-buddy-agent/1.8.15/byte-buddy-agent-1.8.15.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4/2.0.4/powermock-module-junit4-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-module-junit4-common/2.0.4/powermock-module-junit4-common-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-reflect/2.0.4/powermock-reflect-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-core/2.0.4/powermock-core-2.0.4.jar:/Users/linyilong/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-mockito2/2.0.4/powermock-api-mockito2-2.0.4.jar:/Users/linyilong/.m2/repository/org/powermock/powermock-api-support/2.0.4/powermock-api-support-2.0.4.jar:/Users/linyilong/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.12.1/log4j-slf4j-impl-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar:/Users/linyilong/.m2/repository/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/linyilong"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="mvn.forkNumber" value="7"/>
+    <property name="idea.version2020.1.1" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/surefire/surefirebooter146740433154087276.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="linyilong"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.7"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/linyilong/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/13/zrj4_mhs20s73h2kpdjtw4sr0000gn/T/"/>
+    <property name="execution.checkpointing.unaligned" value="true"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="user.dir" value="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-core"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/linyilong/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.ext.dirs" value="/Users/linyilong/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testMergeWithSerializationCopy" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.001"/>
+  <testcase name="testSubtractOtherUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.001"/>
+  <testcase name="testLessThanOrEqualWhenBothSpecified" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testSubtract" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.001"/>
+  <testcase name="testLessThanOrEqualWhenBothUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testMerge" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.001"/>
+  <testcase name="testMergeThisUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testSubtractOtherHasLargerResources" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testMergeBothUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testLessThanOrEqualWhenSpecifiedWithUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.001"/>
+  <testcase name="testMergeOtherUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testSubtractThisUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testLessThanOrEqualWhenUnknownWithSpecified" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testHashCode" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testEquals" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testSingletonPropertyOfUnknown" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0"/>
+  <testcase name="testSerializable" classname="org.apache.flink.api.common.operators.ResourceSpecTest" time="0.007"/>
+</testsuite>

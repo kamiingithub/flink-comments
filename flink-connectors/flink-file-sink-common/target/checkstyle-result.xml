@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.14">
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/bucketassigners/BasePathBucketAssigner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/bucketassigners/DateTimeBucketAssigner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/bucketassigners/SimpleVersionedStringSerializer.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/RowWiseBucketWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/InProgressFileWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/BucketAssigner.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/RollingPolicy.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/BucketWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/OutputFileConfig.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/rollingpolicies/OnCheckpointRollingPolicy.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/rollingpolicies/CheckpointRollingPolicy.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/rollingpolicies/DefaultRollingPolicy.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/BulkBucketWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/WriterProperties.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/OutputStreamBasedPartFileWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/PartFileInfo.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/AbstractPartFileWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/BulkPartWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/main/java/org/apache/flink/streaming/api/functions/sink/filesystem/RowWisePartWriter.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/test/java/org/apache/flink/streaming/api/functions/sink/filesystem/bucketassigners/DateTimeBucketAssignerTest.java">
+</file>
+<file name="/Users/linyilong/IdeaProjects/architect/flink-comments/flink-connectors/flink-file-sink-common/src/test/resources/log4j2-test.properties">
+</file>
+</checkstyle>

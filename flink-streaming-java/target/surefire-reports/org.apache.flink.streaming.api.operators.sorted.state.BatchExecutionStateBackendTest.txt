@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.operators.sorted.state.BatchExecutionStateBackendTest
+-------------------------------------------------------------------------------
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.782 s - in org.apache.flink.streaming.api.operators.sorted.state.BatchExecutionStateBackendTest

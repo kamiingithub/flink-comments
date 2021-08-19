@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorMigrationTest
+-------------------------------------------------------------------------------
+Tests run: 126, Failures: 0, Errors: 0, Skipped: 63, Time elapsed: 5.671 s - in org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorMigrationTest

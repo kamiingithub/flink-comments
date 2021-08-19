@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.registration.RetryingRegistrationConfigurationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.79 s - in org.apache.flink.runtime.registration.RetryingRegistrationConfigurationTest

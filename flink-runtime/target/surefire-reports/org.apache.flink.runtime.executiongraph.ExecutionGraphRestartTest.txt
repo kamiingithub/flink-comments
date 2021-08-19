@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.executiongraph.ExecutionGraphRestartTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.499 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphRestartTest

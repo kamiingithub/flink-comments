@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.resourcemanager.slotmanager.TaskManagerCheckInSlotManagerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.698 s - in org.apache.flink.runtime.resourcemanager.slotmanager.TaskManagerCheckInSlotManagerTest

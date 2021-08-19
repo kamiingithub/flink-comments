@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStoreITCase
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.209 s - in org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStoreITCase

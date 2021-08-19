@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerIdPathParameterTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.083 s - in org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerIdPathParameterTest

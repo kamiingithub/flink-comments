@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.functions.sink.filesystem.BucketStateSerializerTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 2.951 s - in org.apache.flink.streaming.api.functions.sink.filesystem.BucketStateSerializerTest

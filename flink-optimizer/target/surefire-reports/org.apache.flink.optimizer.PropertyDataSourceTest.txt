@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.optimizer.PropertyDataSourceTest
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.963 s - in org.apache.flink.optimizer.PropertyDataSourceTest

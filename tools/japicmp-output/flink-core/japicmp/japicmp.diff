@@ -1,0 +1,22 @@
+Comparing source compatibility of /Users/linyilong/IdeaProjects/architect/flink-comments/flink-core/target/flink-core-1.12.0.jar against /Users/linyilong/.m2/repository/org/apache/flink/flink-core/1.11.0/flink-core-1.11.0.jar
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.api.common.state.CheckpointListener  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 52.0 <- -1.-1
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) void notifyCheckpointAborted(long)
+		+++  NEW EXCEPTION: java.lang.Exception
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) void notifyCheckpointComplete(long)
+		+++  NEW EXCEPTION: java.lang.Exception
+===  UNCHANGED CLASS: PUBLIC FINAL org.apache.flink.configuration.ConfigConstants  (not serializable)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	===  UNCHANGED FIELD: PUBLIC STATIC FINAL boolean DEFAULT_USE_LARGE_RECORD_HANDLER
+		+++  NEW ANNOTATION: java.lang.Deprecated
+	===  UNCHANGED FIELD: PUBLIC STATIC FINAL java.lang.String USE_LARGE_RECORD_HANDLER_KEY
+		+++  NEW ANNOTATION: java.lang.Deprecated
+***  MODIFIED CLASS: PUBLIC org.apache.flink.configuration.Configuration  (compatible)
+	===  CLASS FILE FORMAT VERSION: 52.0 <- 52.0
+	+++  NEW METHOD: PUBLIC(+) STATIC(+) org.apache.flink.configuration.Configuration fromMap(java.util.Map)
++++  NEW INTERFACE: PUBLIC(+) ABSTRACT(+) org.apache.flink.core.fs.LocatedFileStatus  (not serializable)
+	+++  CLASS FILE FORMAT VERSION: 52.0 <- -1.-1
+	+++  NEW INTERFACE: org.apache.flink.core.fs.FileStatus
+	+++  NEW SUPERCLASS: java.lang.Object
+	+++  NEW METHOD: PUBLIC(+) ABSTRACT(+) org.apache.flink.core.fs.BlockLocation[] getBlockLocations()

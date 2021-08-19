@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.environment.StreamExecutionEnvironmentComplexConfigurationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.49 s - in org.apache.flink.streaming.api.environment.StreamExecutionEnvironmentComplexConfigurationTest

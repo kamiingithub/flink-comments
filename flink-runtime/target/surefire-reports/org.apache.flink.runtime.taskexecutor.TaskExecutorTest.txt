@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.taskexecutor.TaskExecutorTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.767 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorTest

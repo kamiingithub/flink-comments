@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.api.functions.windowing.delta.extractor.ConcatenatedExtractTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.ConcatenatedExtractTest

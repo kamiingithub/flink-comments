@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.rest.RestServerEndpointITCase
+-------------------------------------------------------------------------------
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 34.5 s - in org.apache.flink.runtime.rest.RestServerEndpointITCase

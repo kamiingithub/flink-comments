@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.api.java.io.RowCsvInputFormatTest
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.474 s - in org.apache.flink.api.java.io.RowCsvInputFormatTest

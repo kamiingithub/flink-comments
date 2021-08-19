@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.checkpoint.PendingCheckpointTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.845 s - in org.apache.flink.runtime.checkpoint.PendingCheckpointTest

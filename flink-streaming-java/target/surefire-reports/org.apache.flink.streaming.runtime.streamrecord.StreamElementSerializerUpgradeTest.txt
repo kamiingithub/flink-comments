@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.streaming.runtime.streamrecord.StreamElementSerializerUpgradeTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.255 s - in org.apache.flink.streaming.runtime.streamrecord.StreamElementSerializerUpgradeTest

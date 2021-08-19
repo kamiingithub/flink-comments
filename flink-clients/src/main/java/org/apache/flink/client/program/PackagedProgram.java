@@ -297,6 +297,7 @@ public class PackagedProgram {
 		}
 
 		try {
+			// 拿到main函数
 			mainMethod = entryClass.getMethod("main", String[].class);
 		} catch (NoSuchMethodException e) {
 			throw new ProgramInvocationException("The class " + entryClass.getName() + " has no main(String[]) method.");

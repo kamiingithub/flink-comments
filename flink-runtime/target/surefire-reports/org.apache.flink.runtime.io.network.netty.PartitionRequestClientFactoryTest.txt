@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.io.network.netty.PartitionRequestClientFactoryTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.363 s - in org.apache.flink.runtime.io.network.netty.PartitionRequestClientFactoryTest

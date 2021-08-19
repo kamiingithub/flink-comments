@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.execution.librarycache.BlobLibraryCacheManagerTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.311 s - in org.apache.flink.runtime.execution.librarycache.BlobLibraryCacheManagerTest

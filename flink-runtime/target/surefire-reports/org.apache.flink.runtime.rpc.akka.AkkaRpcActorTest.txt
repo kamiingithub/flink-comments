@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.rpc.akka.AkkaRpcActorTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.13 s - in org.apache.flink.runtime.rpc.akka.AkkaRpcActorTest

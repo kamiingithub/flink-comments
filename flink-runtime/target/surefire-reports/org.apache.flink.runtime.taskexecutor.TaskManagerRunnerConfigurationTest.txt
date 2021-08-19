@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.taskexecutor.TaskManagerRunnerConfigurationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.673 s - in org.apache.flink.runtime.taskexecutor.TaskManagerRunnerConfigurationTest

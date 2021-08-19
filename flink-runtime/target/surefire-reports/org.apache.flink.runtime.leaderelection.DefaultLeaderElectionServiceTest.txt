@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.leaderelection.DefaultLeaderElectionServiceTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.716 s - in org.apache.flink.runtime.leaderelection.DefaultLeaderElectionServiceTest

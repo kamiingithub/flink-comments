@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.resourcemanager.ResourceManagerHATest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.795 s - in org.apache.flink.runtime.resourcemanager.ResourceManagerHATest

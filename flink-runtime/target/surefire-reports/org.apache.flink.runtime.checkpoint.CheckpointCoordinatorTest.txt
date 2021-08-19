@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.436 s - in org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest

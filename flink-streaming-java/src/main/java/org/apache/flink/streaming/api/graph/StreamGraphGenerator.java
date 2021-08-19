@@ -256,7 +256,7 @@ public class StreamGraphGenerator {
 
 		alreadyTransformed = new HashMap<>();
 
-		/*TODO transformations是一个list，依次存放了 用户代码里的 算子*/
+		// transformations是一个list，依次存放了 用户代码里的 算子
 		for (Transformation<?> transformation: transformations) {
 			transform(transformation);
 		}

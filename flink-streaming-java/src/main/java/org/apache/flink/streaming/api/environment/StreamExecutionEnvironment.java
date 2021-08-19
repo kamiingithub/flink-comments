@@ -1819,7 +1819,7 @@ public class StreamExecutionEnvironment {
 	public JobExecutionResult execute(String jobName) throws Exception {
 		Preconditions.checkNotNull(jobName, "Streaming Job name should not be null.");
 
-		/*TODO 获取StreamGraph，并接着执行*/
+		// 获取StreamGraph，并执行
 		return execute(getStreamGraph(jobName));
 	}
 

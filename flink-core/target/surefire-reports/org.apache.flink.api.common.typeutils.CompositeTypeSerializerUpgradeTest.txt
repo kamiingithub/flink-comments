@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flink.api.common.typeutils.CompositeTypeSerializerUpgradeTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.534 s - in org.apache.flink.api.common.typeutils.CompositeTypeSerializerUpgradeTest
