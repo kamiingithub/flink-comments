@@ -373,6 +373,7 @@ public class TaskExecutor extends RpcEndpoint implements TaskExecutorGateway {
 	private void startTaskExecutorServices() throws Exception {
 		try {
 			// start by connecting to the ResourceManager
+			//   -----> ResourceManager
 			resourceManagerLeaderRetriever.start(new ResourceManagerLeaderListener());
 
 			// tell the task slot table who's responsible for the task slot actions
@@ -1161,6 +1162,7 @@ public class TaskExecutor extends RpcEndpoint implements TaskExecutorGateway {
 			InstanceID taskExecutorRegistrationId,
 			ClusterInformation clusterInformation) {
 
+		// 向 resourceManager 发起rpc注册slot
 		final CompletableFuture<Acknowledge> slotReportResponseFuture = resourceManagerGateway.sendSlotReport(
 			getResourceID(),
 			taskExecutorRegistrationId,
@@ -1293,6 +1295,7 @@ public class TaskExecutor extends RpcEndpoint implements TaskExecutorGateway {
 				reservedSlots.add(offer);
 			}
 
+			// 向 jobMaster 发起rpc提供slot
 			CompletableFuture<Collection<SlotOffer>> acceptedSlotsFuture = jobMasterGateway.offerSlots(
 				getResourceID(),
 				reservedSlots,

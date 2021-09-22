@@ -45,6 +45,7 @@ public class StandaloneLeaderElectionService implements LeaderElectionService {
 		contender = Preconditions.checkNotNull(newContender);
 
 		// directly grant leadership to the given contender
+		// leader选举
 		contender.grantLeadership(HighAvailabilityServices.DEFAULT_LEADER_ID);
 	}
 

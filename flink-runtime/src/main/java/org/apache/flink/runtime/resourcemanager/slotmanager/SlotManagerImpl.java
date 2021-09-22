@@ -472,6 +472,7 @@ public class SlotManagerImpl implements SlotManager {
 
 			// next register the new slots
 			for (SlotStatus slotStatus : initialSlotReport) {
+				// 注册slot
 				registerSlot(
 					slotStatus.getSlotID(),
 					slotStatus.getAllocationID(),
@@ -680,7 +681,7 @@ public class SlotManagerImpl implements SlotManager {
 						slotId)));
 		}
 
-		/*TODO 创建和注册 新的这些 slot*/
+		// 创建和注册 新的这些
 		final TaskManagerSlot slot = createAndRegisterTaskManagerSlot(slotId, resourceProfile, taskManagerConnection);
 
 		final PendingTaskManagerSlot pendingTaskManagerSlot;
@@ -876,7 +877,9 @@ public class SlotManagerImpl implements SlotManager {
 		final ResourceProfile resourceProfile = pendingSlotRequest.getResourceProfile();
 
 		OptionalConsumer.of(findMatchingSlot(resourceProfile))
+			// yarn session可能走这个
 			.ifPresent(taskManagerSlot -> allocateSlot(taskManagerSlot, pendingSlotRequest))
+			// per job 走这个
 			.ifNotPresent(() -> fulfillPendingSlotRequestWithPendingTaskManagerSlot(pendingSlotRequest));
 	}
 
@@ -885,6 +888,7 @@ public class SlotManagerImpl implements SlotManager {
 		Optional<PendingTaskManagerSlot> pendingTaskManagerSlotOptional = findFreeMatchingPendingTaskManagerSlot(resourceProfile);
 
 		if (!pendingTaskManagerSlotOptional.isPresent()) {
+			// 分配资源
 			pendingTaskManagerSlotOptional = allocateResource(resourceProfile);
 		}
 
@@ -954,7 +958,9 @@ public class SlotManagerImpl implements SlotManager {
 	}
 
 	private Optional<PendingTaskManagerSlot> allocateResource(ResourceProfile requestedSlotResourceProfile) {
+		// 已注册slot的数量
 		final int numRegisteredSlots =  getNumberRegisteredSlots();
+		// 挂起slot的数量
 		final int numPendingSlots = getNumberPendingTaskManagerSlots();
 		if (isMaxSlotNumExceededAfterAdding(numSlotsPerWorker)) {
 			LOG.warn("Could not allocate {} more slots. The number of registered and pending slots is {}, while the maximum is {}.",
@@ -1269,10 +1275,12 @@ public class SlotManagerImpl implements SlotManager {
 			int slotsDiff = redundantTaskManagerNum * numSlotsPerWorker - freeSlots.size();
 			if (freeSlots.size() == slots.size()) {
 				// No need to keep redundant taskManagers if no job is running.
+				// 如果没有 job 在运行，释放 taskmanager
 				releaseTaskExecutors(timedOutTaskManagers, timedOutTaskManagers.size());
 			} else if (slotsDiff > 0) {
 				// Keep enough redundant taskManagers from time to time.
 				int requiredTaskManagers = MathUtils.divideRoundUp(slotsDiff, numSlotsPerWorker);
+				// 保证随时有足够的 taskmanager
 				allocateRedundantTaskManagers(requiredTaskManagers);
 			} else {
 				// second we trigger the release resource callback which can decide upon the resource release

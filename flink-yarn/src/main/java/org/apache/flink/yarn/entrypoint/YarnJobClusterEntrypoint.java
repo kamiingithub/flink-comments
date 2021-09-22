@@ -64,6 +64,7 @@ public class YarnJobClusterEntrypoint extends JobClusterEntrypoint {
 	//  for a single Flink job.
 	// ------------------------------------------------------------------------
 
+	// yarn per job模式入口类
 	public static void main(String[] args) {
 		// startup checks and logging
 		EnvironmentInformation.logEnvironmentInfo(LOG, YarnJobClusterEntrypoint.class.getSimpleName(), args);
@@ -92,6 +93,7 @@ public class YarnJobClusterEntrypoint extends JobClusterEntrypoint {
 
 		YarnJobClusterEntrypoint yarnJobClusterEntrypoint = new YarnJobClusterEntrypoint(configuration);
 
+		// 执行
 		ClusterEntrypoint.runClusterEntrypoint(yarnJobClusterEntrypoint);
 	}
 }

@@ -90,6 +90,7 @@ public abstract class RegisteredRpcConnection<F extends Serializable, G extends 
 		checkState(!closed, "The RPC connection is already closed");
 		checkState(!isConnected() && pendingRegistration == null, "The RPC connection is already started");
 
+		// JM ----> RM
 		/*TODO 创建注册对象*/
 		final RetryingRegistration<F, G, S> newRegistration = createNewRegistration();
 
@@ -224,6 +225,7 @@ public abstract class RegisteredRpcConnection<F extends Serializable, G extends 
 	// ------------------------------------------------------------------------
 
 	private RetryingRegistration<F, G, S> createNewRegistration() {
+		// 生成注册
 		RetryingRegistration<F, G, S> newRegistration = checkNotNull(generateRegistration());
 
 		CompletableFuture<Tuple2<G, S>> future = newRegistration.getFuture();
@@ -241,6 +243,7 @@ public abstract class RegisteredRpcConnection<F extends Serializable, G extends 
 					}
 				} else {
 					targetGateway = result.f0;
+					// 回调注册成功
 					onRegistrationSuccess(result.f1);
 				}
 			}, executor);

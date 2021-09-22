@@ -470,7 +470,7 @@ public abstract class ResourceManager<WorkerType extends ResourceIDRetrievable>
 					slotRequest.getAllocationId());
 
 				try {
-					/*TODO ResourceManager内部的 slotManager去向 Yarn的ResourceManager申请资源*/
+					// ResourceManager内部的 slotManager去向 Yarn的ResourceManager申请资源
 					slotManager.registerSlotRequest(slotRequest);
 				} catch (ResourceManagerException e) {
 					return FutureUtils.completedExceptionally(e);

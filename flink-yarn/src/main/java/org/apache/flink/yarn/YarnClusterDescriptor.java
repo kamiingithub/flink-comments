@@ -1081,6 +1081,7 @@ public class YarnClusterDescriptor implements ClusterDescriptor<ApplicationId> {
 		YarnApplicationState lastAppState = YarnApplicationState.NEW;
 		loop: while (true) {
 			try {
+				// 循环至拿到结果
 				report = yarnClient.getApplicationReport(appId);
 			} catch (IOException e) {
 				throw new YarnDeploymentException("Failed to deploy the cluster.", e);

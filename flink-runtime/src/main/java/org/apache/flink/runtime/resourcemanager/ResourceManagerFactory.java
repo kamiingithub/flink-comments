@@ -56,6 +56,7 @@ public abstract class ResourceManagerFactory<T extends ResourceIDRetrievable> {
 			Executor ioExecutor) throws Exception {
 
 		final ResourceManagerMetricGroup resourceManagerMetricGroup = ResourceManagerMetricGroup.create(metricRegistry, hostname);
+
 		final SlotManagerMetricGroup slotManagerMetricGroup = SlotManagerMetricGroup.create(metricRegistry, hostname);
 
 		final ResourceManagerRuntimeServices resourceManagerRuntimeServices = createResourceManagerRuntimeServices(

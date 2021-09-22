@@ -347,6 +347,7 @@ public class SlotPoolImpl implements SlotPool {
 		log.info("Requesting new slot [{}] and profile {} with allocation id {} from resource manager.",
 			pendingRequest.getSlotRequestId(), pendingRequest.getResourceProfile(), allocationId);
 
+		// 向 ResourceManager 发起RPC请求slot
 		CompletableFuture<Acknowledge> rmResponse = resourceManagerGateway.requestSlot(
 			jobMasterId,
 			new SlotRequest(jobId, allocationId, pendingRequest.getResourceProfile(), jobManagerAddress),

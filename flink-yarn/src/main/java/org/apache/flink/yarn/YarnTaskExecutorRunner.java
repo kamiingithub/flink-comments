@@ -61,6 +61,8 @@ public class YarnTaskExecutorRunner {
 	 * The entry point for the YARN task executor runner.
 	 *
 	 * @param args The command line arguments.
+	 *
+	 * YARN 启动taskManager入口
 	 */
 	public static void main(String[] args) {
 		EnvironmentInformation.logEnvironmentInfo(LOG, "YARN TaskExecutor runner", args);

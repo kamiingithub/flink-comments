@@ -163,7 +163,11 @@ public class DefaultDispatcherResourceManagerComponentFactory implements Dispatc
 
 			final String hostname = RpcUtils.getHostname(rpcService);
 
-			/*TODO 创建 ResourceManager：Yarn模式的 ResourceManager*/
+			// TODO 创建 ResourceManager：Yarn模式的 ResourceManager
+			// 创建 ResourceManager 对象，返回的是 new YarnResourceManager
+			// 调度过程：AbstractDispatcherResourceManagerComponentFactory
+			//          -> ActiveResourceManagerFactory
+			//          -> YarnResourceManagerFactory
 			resourceManager = resourceManagerFactory.createResourceManager(
 				configuration,
 				ResourceID.generate(),

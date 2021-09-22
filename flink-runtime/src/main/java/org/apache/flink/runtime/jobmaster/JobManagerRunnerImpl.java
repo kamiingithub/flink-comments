@@ -277,6 +277,7 @@ public class JobManagerRunnerImpl implements LeaderContender, OnCompletionAction
 			leadershipOperation = leadershipOperation.thenCompose(
 				(ignored) -> {
 					synchronized (lock) {
+						// 校验作业的调度状态然后启动作业管理器
 						return verifyJobSchedulingStatusAndStartJobManager(leaderSessionID);
 					}
 				});

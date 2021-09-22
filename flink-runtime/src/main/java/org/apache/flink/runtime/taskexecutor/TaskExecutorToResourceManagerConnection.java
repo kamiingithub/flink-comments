@@ -79,6 +79,9 @@ public class TaskExecutorToResourceManagerConnection
 			taskExecutorRegistration);
 	}
 
+	/**
+	 * TaskExecutor 成功注册到 ResourceMangaer 的回调
+	 */
 	@Override
 	protected void onRegistrationSuccess(TaskExecutorRegistrationSuccess success) {
 		log.info("Successful registration at resource manager {} under registration id {}.",
@@ -121,6 +124,7 @@ public class TaskExecutorToResourceManagerConnection
 				ResourceManagerGateway resourceManager, ResourceManagerId fencingToken, long timeoutMillis) throws Exception {
 
 			Time timeout = Time.milliseconds(timeoutMillis);
+			// taskExecutor 注册进 resourceManager
 			return resourceManager.registerTaskExecutor(
 				taskExecutorRegistration,
 				timeout);

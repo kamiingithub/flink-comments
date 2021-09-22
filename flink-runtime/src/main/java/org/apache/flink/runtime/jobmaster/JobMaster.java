@@ -572,6 +572,7 @@ public class JobMaster extends FencedRpcEndpoint<JobMasterId> implements JobMast
 		final RpcTaskManagerGateway rpcTaskManagerGateway = new RpcTaskManagerGateway(taskExecutorGateway, getFencingToken());
 
 		return CompletableFuture.completedFuture(
+			// 往自己的 slotPool 里放slot
 			slotPool.offerSlots(
 				taskManagerLocation,
 				rpcTaskManagerGateway,
@@ -816,6 +817,7 @@ public class JobMaster extends FencedRpcEndpoint<JobMasterId> implements JobMast
 
 		//TODO: Remove once the ZooKeeperLeaderRetrieval returns the stored address upon start
 		// try to reconnect to previously known leader
+		// 连接到之前已知的 ResourceManager
 		reconnectToResourceManager(new FlinkException("Starting JobMaster component."));
 
 		// job is ready to go, try to establish connection with resource manager
@@ -1001,6 +1003,7 @@ public class JobMaster extends FencedRpcEndpoint<JobMasterId> implements JobMast
 	private void notifyOfNewResourceManagerLeader(final String newResourceManagerAddress, final ResourceManagerId resourceManagerId) {
 		resourceManagerAddress = createResourceManagerAddress(newResourceManagerAddress, resourceManagerId);
 
+		// 重连
 		reconnectToResourceManager(new FlinkException(String.format("ResourceManager leader changed to new address %s", resourceManagerAddress)));
 	}
 
@@ -1017,6 +1020,7 @@ public class JobMaster extends FencedRpcEndpoint<JobMasterId> implements JobMast
 
 	private void reconnectToResourceManager(Exception cause) {
 		closeResourceManagerConnection(cause);
+		// try connect
 		tryConnectToResourceManager();
 	}
 
@@ -1043,6 +1047,7 @@ public class JobMaster extends FencedRpcEndpoint<JobMasterId> implements JobMast
 			resourceManagerAddress.getResourceManagerId(),
 			scheduledExecutorService);
 
+		// 发起连接
 		resourceManagerConnection.start();
 	}
 
@@ -1063,7 +1068,7 @@ public class JobMaster extends FencedRpcEndpoint<JobMasterId> implements JobMast
 				resourceManagerGateway,
 				resourceManagerResourceId);
 
-			/*TODO slotpool连接到ResourceManager，请求资源*/
+			// slotpool连接到ResourceManager，请求资源
 			slotPool.connectToResourceManager(resourceManagerGateway);
 
 			resourceManagerHeartbeatManager.monitorTarget(resourceManagerResourceId, new HeartbeatTarget<Void>() {
